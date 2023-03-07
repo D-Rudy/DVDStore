@@ -1,4 +1,4 @@
-package org.example;
+package com.mycompany.dvdstore;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
