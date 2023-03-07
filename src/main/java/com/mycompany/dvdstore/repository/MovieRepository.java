@@ -1,7 +1,6 @@
 package com.mycompany.dvdstore.repository;
 
 import com.mycompany.dvdstore.entity.Movie;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
