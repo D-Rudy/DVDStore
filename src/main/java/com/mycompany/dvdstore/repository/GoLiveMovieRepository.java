@@ -8,7 +8,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class GoLiveMovieRepository {
+public class GoLiveMovieRepository implements MovieRepositoryInterface {
 
     private final Logger logger = LoggerFactory.getLogger(GoLiveMovieRepository.class);
 
@@ -16,8 +16,6 @@ public class GoLiveMovieRepository {
         logger.trace("Adding movie in a txt file");
         FileWriter writer;
         try {
-            Scanner sc = new Scanner(System.in);
-
             writer = new FileWriter("movies.txt", true);
             writer.write(movie.getGenre() + ";" + movie.getTitle() + "\n");
             writer.close();
@@ -27,4 +25,6 @@ public class GoLiveMovieRepository {
         }
         logger.info("The movie {} added!", movie.getTitle());
     }
+
+
 }
