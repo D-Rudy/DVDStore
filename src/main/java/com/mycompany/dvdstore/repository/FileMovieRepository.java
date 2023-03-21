@@ -13,7 +13,7 @@ public class FileMovieRepository implements MovieRepositoryInterface {
 
     private final Logger logger = LoggerFactory.getLogger(FileMovieRepository.class);
 
-    @Value("movies.file.location")
+    @Value("${movies.file.location}")
     private File file;
 
     public void add(Movie movie) {
