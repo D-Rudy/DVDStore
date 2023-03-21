@@ -30,4 +30,12 @@ public class MovieController {
 
         sc.close();
     }
+
+    public MovieServiceInterface getMovieService() {
+        return movieService;
+    }
+
+    public void setMovieService(MovieServiceInterface movieService) {
+        this.movieService = movieService;
+    }
 }

@@ -17,4 +17,5 @@ public class MovieRepository implements MovieRepositoryInterface {
         movies.add(movie);
         logger.info("The movie {} added!", movie.getTitle());
     }
+
 }
