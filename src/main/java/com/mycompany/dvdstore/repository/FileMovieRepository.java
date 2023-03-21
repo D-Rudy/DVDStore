@@ -6,11 +6,10 @@ import org.slf4j.LoggerFactory;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Scanner;
 
-public class GoLiveMovieRepository implements MovieRepositoryInterface {
+public class FileMovieRepository implements MovieRepositoryInterface {
 
-    private final Logger logger = LoggerFactory.getLogger(GoLiveMovieRepository.class);
+    private final Logger logger = LoggerFactory.getLogger(FileMovieRepository.class);
 
     public void add(Movie movie) {
         logger.trace("Adding movie in a txt file");

@@ -7,9 +7,9 @@ import org.slf4j.LoggerFactory;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MovieRepository implements MovieRepositoryInterface {
+public class MemoryMovieRepository implements MovieRepositoryInterface {
 
-    private final Logger logger = LoggerFactory.getLogger(MovieRepository.class);
+    private final Logger logger = LoggerFactory.getLogger(MemoryMovieRepository.class);
 
     private final List<Movie> movies = new ArrayList<Movie>();
 
