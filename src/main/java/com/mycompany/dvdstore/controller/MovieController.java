@@ -4,12 +4,14 @@ import com.mycompany.dvdstore.entity.Movie;
 import com.mycompany.dvdstore.service.MovieServiceInterface;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Scanner;
 
 public class MovieController {
     private final Logger logger = LoggerFactory.getLogger(MovieController.class);
 
+    @Autowired
     private MovieServiceInterface movieService;
 
     public void addUsingConsole() {
