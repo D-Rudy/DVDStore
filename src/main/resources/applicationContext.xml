@@ -5,7 +5,9 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <bean id="movieRepository" class="com.mycompany.dvdstore.repository.FileMovieRepository"/>
+    <bean id="movieRepository" class="com.mycompany.dvdstore.repository.FileMovieRepository">
+        <property name="file" value="movies.csv"/>
+    </bean>
 
     <bean id="movieService" class="com.mycompany.dvdstore.service.DefaultMovieService">
         <property name="movieRepository" ref="movieRepository"/>
